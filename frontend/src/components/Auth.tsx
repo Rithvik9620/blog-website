@@ -27,7 +27,7 @@ const Auth = ({type}:{type:"signup"|"signin"}) => {
   return (
     <div className="h-screen flex justify-center flex-col">
         <div className="text-3xl font-bold text-center">Create an account</div>
-        <div className="text-slate-600 text-center">{type === "signin" ? "Don't have an account?" : "Already have an account?"} <Link className="pl-1 underline" to={type === "signin" ? '/signup' : '/signin'}>
+        <div className="text-slate-600 text-center">{type === "signin" ? "Don't have an account?" : "Already have an account?"} <Link className="pl-1 underline" to={type === "signin" ? '/' : '/signin'}>
             {type === "signin" ? "Sign Up" : "Login"}</Link></div>
         <div className="mx-32 mt-6">
         {type === "signup" ? <LabelledInput label="Name" placeholder="Enter your name" onChange={(e)=>{
