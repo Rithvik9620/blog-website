@@ -24,7 +24,7 @@ const Blog = () => {
   return (
     <div>
       <Appbar/>
-      <FullBlog blog={blog}/>
+      {blog ? <FullBlog blog={blog}/> : null}
     </div>
   )
 }
